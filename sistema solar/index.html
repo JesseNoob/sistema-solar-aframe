@@ -1,16 +1,73 @@
-<!DOCTYPE html>
+<DOCTYPE html>
 <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="css/style.css">
-      <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-      <script src="js/app.js"></script>
-      <title>Sistema Solar</title>
-  </head>
-  <body>
-      <!-- Reggys acordate de guardar los archivos en la carpeta source, cuando coloques las texturas de los planetas -->
-  
-      
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+</head>
+<body>
+    <a-assets>
+         <img src="source/sky.jpeg" id="sky">
+        <img src="source/sol.jpg" id="s">
+        <img src="source/mercurio.jpg" id="mer">
+        <img src="source/venus.jpg" id="ven">
+        <img src="source/tierra.jpg" id="tie">
+        <img src="source/mar.jpg" id="mar">
+        <img src="source/jupiter.jpg" id="jup">
+        <img src="source/saturno.jpg" id="sat">
+        <img src="source/urano.jpg" id="ura">
+        <img src="source/neptuno.jpg" id="nep">
+    </a-assets>
+    <a-scene>
+<a-sky src="#sky">
+
+</a-sky>
+        <a-entity class="sol" id="1">
+            <a-entity  geometry="primitive :sphere ;radius:20;" position="-200 0 0" material="shader:flat; src:#s"></a-entity>
+          </a-entity>
+          <!-- SOL -->
+        <a-entity class="mercurio" id="2">
+            <a-entity  geometry="primitive :sphere ;radius:3;" position=" -100 0 0" material="shader:flat; src:#mer"></a-entity>
+        </a-entity>
+  <!--MERCURIO -->
+
+        <a-entity class="venus" id="3">
+            <a-entity  geometry="primitive :sphere ;radius:4;" position=" -50 0 0" material="shader:flat; src:#ven"></a-entity>
+        </a-entity>
+  <!-- Venus-->
+        <a-entity class="tierra" id="4">
+            <a-entity  geometry="primitive :sphere ;radius:4.5;" position="-15 0 0" material="shader:flat; src:#tie"></a-entity>
+        </a-entity>
+  <!-- TIERRA -->
+        <a-entity class="marte" id="5">
+            <a-entity  geometry="primitive :sphere ;radius:9;" position="  40 0 0" material="shader:flat; src: #mar "></a-entity>
+        </a-entity>
+  <!--MARTE -->
+        <a-entity class="jupiter" id="6">
+             <a-entity  geometry="primitive :sphere ;radius:17;" position="  100 0 0" material="shader:flat; src: #jup"></a-entit>
+            </a-entity>
+      <!-- JUPITER-->
+        <a-entity class="saturno" id="7">
+            <a-entity  geometry="primitive :sphere ;radius:13.5;" position="  210 0 0" material="shader:flat; src: #sat"></a-entity>
+        </a-entity>
+  <!-- SATURNO-->
+        <a-entity class="urano" id="8">
+            <a-entity  geometry="primitive :sphere ;radius:13;" position="  300 0 0" material="shader:flat; src: #ura"></a-entity>
+        </a-entity>
+  <!-- URANO-->
+        <a-entity class="neptuno" id="9">
+
+         <a-entity  geometry="primitive :sphere ;radius:10;" position="  370 0 0" material="shader:flat; src:#nep"></a-entity>
+        </a-entity>
+        <!-- NEPTUNO -->
+
+
+        </a-entity>    
+
+
+</a-scene>
+
+    
+</body>
 </html>
